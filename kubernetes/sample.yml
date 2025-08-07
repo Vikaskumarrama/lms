@@ -1,0 +1,29 @@
+#key values
+key:value
+name:vikas
+city:hyd
+branch:devops
+
+#dictonaries or map set of properties for an item for dictonaries indentation must
+person:
+  name:vikas
+  city:hyd
+  branch:devops
+
+#not a dictonary no indentation
+human:
+name:vikas
+city:hyd
+branch:devops
+
+#lists or arrays- multiple elements
+person:
+  name:vikas
+  city:hyd
+  branch:devops
+  hobbies:
+    -coding
+    -swimming
+    -singing
+
+
