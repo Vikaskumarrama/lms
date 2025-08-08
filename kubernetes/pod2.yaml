@@ -1,8 +1,8 @@
 #pod template yaml
-apiversion: v2
+apiversion: v1
 kind: pod
 metadata:
-  name: nginx-pod
+  name: nginx-pod1
 spec:
   containers:
     -name: c1

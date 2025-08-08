@@ -6,13 +6,13 @@ branch:devops
 
 #dictonaries or map set of properties for an item for dictonaries indentation must
 person:
-  name:vikas
-  city:hyd
+  name: vikas
+  city: hyd
   branch:devops
 
 #not a dictonary no indentation
 human:
-name:vikas
+name: vikas
 city:hyd
 branch:devops
 
