@@ -1,13 +1,13 @@
 #pod template yaml#
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
-  name: nginx-pod1
+  name: p1
 spec:
   containers:
-    -name: c1
-    -image: nginx
-    -ports:
-      -containerPort: 80
+  - name: c1
+    image: nginx
+    ports:
+    - containerPort: 80
 
 
