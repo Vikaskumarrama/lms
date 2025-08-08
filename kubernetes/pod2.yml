@@ -1,5 +1,5 @@
-#pod template yaml
-apiversion: v1
+#pod template yaml#
+apiVersion: v1
 kind: pod
 metadata:
   name: nginx-pod1
@@ -9,3 +9,5 @@ spec:
     -image: nginx
     -ports:
       -container port: 80
+
+
