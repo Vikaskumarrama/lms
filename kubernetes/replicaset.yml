@@ -1,6 +1,6 @@
 #replicaset template
 apiVersion: v1
-kind: replicaset
+kind: ReplicaSet
 metadata: 
   name: nginx
   spec:
@@ -16,8 +16,7 @@ metadata:
     spec:
       containers:
       - name: nginx
-      - image: nginx
-      - ports:
+        image: nginx
+        ports:
         - containerPort: 80
-
 
