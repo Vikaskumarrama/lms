@@ -1,0 +1,15 @@
+#deployment
+deployment:
+name: nginx
+replicas: 1
+label: nginx
+container: nginx
+containerPort: 80
+
+#sevice
+service:
+name: nginx
+type: NodePort
+label: nginx
+port: 80
+NodePort: 30007

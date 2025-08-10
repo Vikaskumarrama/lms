@@ -1,0 +1,25 @@
+#temployment template
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Unique key of the Deployment instance
+  name: {{.values.deployment.name}}
+spec:
+  # 3 Pods should exist at all times.
+  replicas: {{.values.deployment.replicas}}
+  selector:
+    matchLabels:
+      app: {{.values.deployment.label}}
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
+        app: {{.values.deployment.label}}
+    spec:
+      containers:
+      - name: {{.values.deployment.container}}
+        # Run this image
+        image: {{.values.deployment.image}}
+        ports:
+        - containerPort: {{.values.deployment.port}}
